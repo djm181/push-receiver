@@ -130,8 +130,7 @@ export default class PushReceiver extends EventEmitter {
         })
     }
 
-
-    private destroy = () => {
+    destroy(): void {
         clearTimeout(this.retryTimeout)
 
         if (this.socket) {
