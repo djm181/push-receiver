@@ -9,5 +9,4 @@ web/
 test/keys.js
 .history
 dist
-src/protos.d.ts
 *.tsbuildinfo
