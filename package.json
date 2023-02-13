@@ -10,9 +10,9 @@
         "*.md"
     ],
     "scripts": {
-        "protos:convert": "mkdir -p dist && yarn pbjs -t static-module --force-long --wrap commonjs -o ./dist/protos.js ./src/protos/*.proto",
-        "protos:ts": "yarn pbts -o ./dist/protos.d.ts ./dist/protos.js",
-        "protos:dev": "yarn pbts -o ./src/protos.d.ts ./dist/protos.js",
+        "protos:convert": "mkdir -p dist && yarn pbjs -t static-module --force-long --wrap commonjs -o ./src/protos.js ./src/protos/*.proto",
+        "protos:ts": "yarn pbts -o ./dist/protos.d.ts ./src/protos.js",
+        "protos:dev": "yarn pbts -o ./src/protos.d.ts ./src/protos.js",
         "protos:build": "yarn protos:convert && yarn protos:ts && yarn protos:dev",
         "build": "yarn clean && yarn protos:build && yarn tsc",
         "compile": "yarn protos:build && yarn tsc --incremental",
