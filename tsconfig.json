@@ -12,6 +12,9 @@
         "allowSyntheticDefaultImports": true,
         "composite": true
     },
+    "include": [
+        "src/**/*"
+    ],
     "exclude": [
         "src/protos.d.ts",
         "dist"
