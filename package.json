@@ -1,5 +1,5 @@
 {
-    "name": "@eneris/push-receiver",
+    "name": "@patrolio/push-receiver",
     "version": "3.0.1",
     "description": "A module to subscribe to GCM/FCM and receive notifications within a node process.",
     "main": "dist/client.js",
